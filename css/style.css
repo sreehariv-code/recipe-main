@@ -182,13 +182,13 @@ ol {
 }
 
 .subhead__text + ol li::before {
-  counter-increment: list-item; /* Increment the list counter */
-  content: counter(list-item) "."; /* Display the list counter */
+  counter-increment: list-item;
+  content: counter(list-item) ".";
   position: absolute;
   left: 0;
-  font-size: 1em; /* Adjust size as needed */
-  color: var(--nutmeg); /* Custom color */
-  line-height: 1; /* Ensure proper vertical alignment */
+  font-size: 1em;
+  color: var(--nutmeg);
+  line-height: 1;
   font-weight: var(--font-600);
   top: 8%;
 }
@@ -213,26 +213,8 @@ ol {
   padding: 20px;
 }
 
-.nutrition .table .row:not(:first-child):not(:last-child) {
-  border-top: 1px solid var(--light-gray);
-  border-bottom: 1px solid var(--light-gray);
-}
-
-.nutrition .table .row:first-child {
-  border-bottom: 1px solid var(--light-gray);
-}
-
-.nutrition .table .row:last-child {
-  border-top: 1px solid var(--light-gray);
-}
-
-.nutrition .table .row .cell:nth-child(1) {
-  color: var(--wenge-brown);
-}
-
-.nutrition .table .row .cell:nth-child(2) {
-  color: var(--nutmeg);
-  font-weight: var(--font-600);
+.nutrition .table .row:not(:last-child) {
+  border-bottom: 2px solid var(--light-gray);
 }
 
 @media screen and (max-width: 768px) {
